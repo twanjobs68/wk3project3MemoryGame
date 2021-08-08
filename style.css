@@ -1,8 +1,12 @@
 .grid{
     
-    border: solid purple 5px;
+    border: solid purple 10px;
     flex-wrap: wrap;
-    height: 600px;
-    width:800px;
+    height: 695px;
+    width:700px;
 
+}
+img{
+    width: 230px;
+    height: 170px
 }
