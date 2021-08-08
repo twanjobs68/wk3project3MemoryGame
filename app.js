@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',() =>{
 
 
 //pics for each card
-const cardArray = [
+const arrayOfPics = [
     {name:'flower1', 
     img: 'src/week3HWJuly2021-scaffolded\img\alex-quezada-MMRRFV7aB2s-unsplash - Copy.jpg'},
     {name:'flower1', 
@@ -76,9 +76,9 @@ function createBoard() {
 
 function flipCard(){
     let cardId = this.getAttribute('data-id')
-    cardsChosen.push(cardArray[cardId].name)  
+    cardsChosen.push(arrayOfPics[cardId].name)  
     cardsChosenId.push(cardId)  
-    this.setAttribute('src', cardArray[cardId].img)
+    this.setAttribute('src', arrayOfPics[cardId].img)
     if (cardsChosen.length === 2){
         setTimeout(checkForMatch, 500)
         
