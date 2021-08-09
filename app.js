@@ -118,10 +118,10 @@ function gameBoard() {
 function cardFlipped(){
     //get id and make empty array to push card from card pics that matches card id
     let cardId = this.getAttribute('keyCard-Id')
-    selectedCard.push(pictArray[cardId].name)  
+    selectedCard.push(pictArray[cardId].name)  //push pic of selected card
     selectedCardId.push(cardId)  
     this.setAttribute('src', pictArray[cardId].img)//add image that matched card idto card that is picked
-    if (selectedCard.length === 2){ //checks for number of cards chosen
+    if (selectedCard.length === 2){ //checks for number of cards chosen to determine if all cards have been matched
         setTimeout(checkMatched, 400)//400 seconds to check for matches 
         
     }
